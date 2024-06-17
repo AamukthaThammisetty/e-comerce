@@ -3,7 +3,7 @@ import WomanImg from "../img/woman_hero.png"
 import { Link } from 'react-router-dom'
 function Hero() {
   return (
-    <div className='bg-pink-200 h-[800px] bg-no-repeat bg-cover py-24 bg-center bg-hero'>
+    <div className=' h-[800px] bg-no-repeat bg-cover py-24 bg-center bg-hero'>
       <div className="container mx-auto flex justify-around h-full">
         <div className='flex flex-col justify-center'>
           <div className='font-semibold flex  items-center uppercase'>
