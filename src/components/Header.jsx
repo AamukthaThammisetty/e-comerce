@@ -22,7 +22,7 @@ function Header() {
             <img src={Logo} className="w-[40px] ml-10" alt=""/>
           </div>
         </Link>
-        <div>Header</div>
+        <div></div>
         <div onClick={()=>setIsOpen(!isOpen)} className='cursor-pointer flex relative mr-10'>
           <BsBag className='text-2xl'/>
           <div className='bg-red-400 absolute  -right-2 -bottom-2 text-[12px] w-[18px] h-[18px] text-white rounded-full flex justify-center items-center'>{itemAmount}</div>
