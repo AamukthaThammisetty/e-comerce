@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { SidebarContext } from '../contexts/SidebarContext';
 import { IoMdArrowForward } from 'react-icons/io';
 import { CartContext } from '../contexts/CartContext';
+import { Link } from 'react-router-dom';
 import CartItem from './CartItem';
 import { FiTrash2 } from 'react-icons/fi';
 function Sidebar(){
@@ -20,7 +21,7 @@ function Sidebar(){
         <IoMdArrowForward className='text-2xl'/>
        </div>
       </div>
-      <div className='flex flex-col gap-y-2 h-[520px] lg:h-[520px] overflow-y-auto overflow-hidden'>
+      <div className='flex flex-col gap-y-2 h-[420px] lg:h-[420px] overflow-y-auto overflow-hidden'>
         {cart.map(item=>{
         return <CartItem item={item} key={item.id}/>
       })}</div>
@@ -29,6 +30,8 @@ function Sidebar(){
           <div className='uppercase font-semibold'><span>Total:</span>$ {parseFloat(total).toFixed(2)}</div>
           <div onClick={clearCart} className='cursor-pointer py-4 bg-red-500 text-white w-12 h-12 flex justify-center items-center text-xl'><FiTrash2/></div>
         </div>
+        <Link to='/' className=" bg-gray-200 flex p-4 justify-center items-center text-primary w-full font-medium">View cart</Link>
+        <Link className='bg-primary flex p-4 justify-center items-center text-white w-full font-medium'>Checkout</Link>
       </div>
     </div>
   );
