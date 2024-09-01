@@ -1,8 +1,18 @@
-# React + Vite
+# Shop Ease
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Shop Ease** is a React-based e-commerce store application that demonstrates building a modern online shopping experience. It uses React for the front-end, `react-router-dom` for navigation, Context API for state management, and the Fake Store API for mock data.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Product Listing**: Displays a list of products fetched from the Fake Store API.
+- **Product Details**: View detailed information about a product.
+- **Shopping Cart**: Add and remove products from the cart using Context API.
+- **Routing**: Navigate between home, product details, and cart pages.
+
+## Technologies Used
+
+- **React**: Front-end library for building user interfaces.
+- **react-router-dom**: For handling routing and navigation.
+- **Context API**: For state management.
+- **Fake Store API**: For fetching product data.
+- **Axios**: For making HTTP requests.
